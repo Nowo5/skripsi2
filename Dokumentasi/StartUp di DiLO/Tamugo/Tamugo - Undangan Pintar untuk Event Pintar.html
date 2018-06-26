@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <!-- <title></title> -->
+        <meta name="google-site-verification" content="0dx0hk0yFpxwZksJ2w5ttCfuqukjqwpDzwmkZjLqiCA">
+        <title>Tamugo - Undangan Pintar untuk Event Pintar</title>
+        <meta name="description" content="Tamugo - Barcode / QR Code untuk Undangan Event. Pendataan Tamu menggunakan Apps. Menjauhkan tamu yang tak diundang. Tools wajib untuk Event Organizer">
+        <meta property="og:title" content="Tamugo - Sistem Undangan Pintar untuk Event Pintar">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://www.tamugo.com/images/cover/onGadgetNote_Hi.jpg">
+        <meta property="og:url" content="http://www.tamugo.com">
+        <meta property="og:description" content="Tamugo - dikembangkan 100% dengan penuh  oleh Solusi.Mu. Dari tanah Solo, Tamugo dihadirkan untuk membuat pengelolaan event menjadi lebih teratur dan sistematis, terlebih dalam hal pengelolaan tamu undangan. Solusi ini dapat dipakai baik oleh EO Professional maupun indvidu perseorangan. Dilengkapi dengan Mobile Aplikasi  , Sistem ini menjadi sangat ideal untuk menjaga kelancaran pendataan tamu saat hari-H.
+Tunggu apa lagi ? Saatnya mengelola tamu undangan anda menggunakan Tamugo saat ini juga. Hanya membutuhkan 30 detik untuk memulainya">
+
+
+        <!-- Viewport mobile tag for sensible mobile support -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="google-site-verification" content="1X8tcu3M5N6lYLkVTfZT0bfIumnpjndwlb4fJNoX9P0">
+        <!--
+                Stylesheets and Preprocessors
+                ==============================
+                You can always bring in CSS files manually with `<link>` tags, or asynchronously
+                    using a solution like AMD (RequireJS).  Or, if you like, you can take advantage
+                    of Sails' conventional asset pipeline (boilerplate Gruntfile).
+                    By default, stylesheets from your `assets/styles` folder are included
+                    here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+                    are supported. In production, your styles will be minified and concatenated into
+                    a single file.
+
+                    To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+                    For example, here are a few things you could do:
+
+                        + Change the order of your CSS files
+                        + Import stylesheets from other directories
+                        + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+            -->
+            <!--STYLES-->
+            <link rel="stylesheet" href="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/production.css">
+            <!--STYLES END-->
+            <!--<script src="/js/vendor/modernizr.js"></script> -->
+            <script type="text/javascript" defer="defer" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/float.ls"></script><script async="" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/analytics_002.js"></script><script async="" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/analytics_002.js"></script><script id="facebook-jssdk" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/sdk.js"></script><script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/modernizr.js"></script>
+            <script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/jquery.js"></script>
+            <script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/moment-with-locales.js"></script>
+            <script>
+                if (!window.Modernizr) {
+            document.write('<script src="/js/vendor/modernizr.js"><\/script>');
+                            }
+                if (!window.jQuery) {
+            document.write('<script src="/js/vendor/jquery.js"><\/script>');
+                            }
+                if (!window.moment) {
+                    document.write('<script src="/js/vendor/moment.js"><\/script>');
+                }
+            </script>
+
+        <meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><meta class="foundation-mq-topbar"><style></style><link rel="stylesheet" href="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/floatsupportbtn.css"><script defer="defer" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/track.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://z-m-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style></head>
+        <body class="f-topbar-fixed">
+            <!--TEMPLATES-->
+            <script type="text/javascript" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/jst.js"></script>
+            <!--TEMPLATES END-->
+            <section class="landingpage">
+  <div class="show-for-large-up language-button">
+
+      <form class="flag-language" method="post" action="/main/SelectLanguage" data-abide="" style="display:inline;" novalidate="novalidate" siq_id="autopick_7040">
+        
+        <a id="imgLanguageID" style="color:red;"><img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/id-flag.png"> ID</a>
+        
+        <input name="PilihBahasa" value="id" type="hidden">
+      </form>
+
+      <form class="flag-language" method="post" action="/main/SelectLanguage" data-abide="" style="display:inline;" novalidate="novalidate" siq_id="autopick_8204">
+
+        
+          <a id="imgLanguage" style="color: #76323F;"><img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/english-flag.png"> EN</a>
+        
+        <input name="PilihBahasa" value="en" type="hidden">
+      </form>
+
+  </div>
+<section id="top">
+<!-- Top bar navigation -->
+  <div class="sticky fixed">
+    <nav class="top-bar-home top-bar" data-topbar="" role="navigation" data-options="sticky_on: large">
+      <div class="top-bar-container">
+        <ul class="title-area">
+            <li class="name">
+                <a href="https://tamugo.com/" style="z-index:2;"> <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/logo.png" style="height: 100%;">  </a>
+            </li>
+            <li class="toggle-topbar menu-icon" style="left:90%;"><a href="#"><i class="fi-list large" style="font-size:2em;"></i></a></li>
+        </ul>
+
+        <div class="top-bar-section-home">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="no-background">
+                    <a href="#top" class="no-background" onclick="fixToggleMenu();">BERANDA</a>
+                </li>
+                <li class="no-background">
+                    <a href="#aboutus" class="no-background" onclick="fixToggleMenu();">TENTANG TAMUGO</a>
+                </li>
+                <li class="no-background">
+                    <a href="#feature" class="no-background" onclick="fixToggleMenu();">FITUR</a>
+                </li>
+                <li class="no-background">
+                    <a href="#carakerja" class="no-background" onclick="fixToggleMenu();">CARA KERJA</a>
+                </li>
+                <li class="no-background">
+                    <a href="#testimonial" class="no-background" onclick="fixToggleMenu();">TESTIMONIAL</a>
+                </li>
+                <li class="no-background">
+                    <a href="#pricing" class="no-background" onclick="fixToggleMenu();">PRICING</a>
+                </li>
+                <li class="no-background">
+                    <a href="#contactus" class="no-background" onclick="fixToggleMenu();">KONTAK KAMI</a>
+                </li>
+                <!-- <li class="no-background">
+                    <a href="https://play.google.com/store/apps/details?id=com.solusi.mu.undangan.mu" class="no-background"><i class="fi-social-android"> </i>App</a>
+                </li> -->
+                <li class="active"><a href="https://blog.tamugo.com/" target="_blank">BLOG</a></li>
+                <li class="active"><a href="https://tamugo.com/backdesk/login">LOGIN</a></li>
+
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+<!-- End Top bar navigation -->
+</section>
+
+<section id="intro" data-magellan-destination="intro" style="background-position: 50% 15px; margin-top:-3%;">
+
+    <section class="sample slider--animated slidizle forward slide-0 first loaded-slide-0 paused" data-slidizle="" data-slidizle-timeout="5000" data-slidizle-loop="true" data-slidizle-pause-on-hover="true">
+
+			<ul class="slider-content slidizle-content" data-slidizle-content="">
+
+				<li class="slider-item first slidizle-slide active" style="background-image:url('../images/wedding.jpg')">
+
+				</li>
+
+				<li class="slider-item last slidizle-slide after-active previous next" style="background-image:url('../images/event.jpg')">
+
+				</li>
+
+			</ul>
+
+      <header>
+        <div class="row">
+          <div class="small-12 large-6 columns right">
+            <div class="tagline-top">
+              <h1>PIMP UP</h1>
+              <h1>YOUR INVITATION</h1>
+              <p>Tamugo memberikan Anda sebuah pengalaman baru dalam mengorganisir event Anda, khususnya dalam hal manajemen tamu yang hadir.</p>
+            </div>
+          </div>
+          <div class="small-12 large-5 columns left">
+            <form action="/signup" method="post" data-abide="" class="form" name="login-form" style=" border: 1px solid #f4f4f6; padding: 15px 20px; display: block; margin-top: 75px; background: #fff;" novalidate="novalidate" siq_id="autopick_9879">
+            <div class="title-sign-up">
+              <h3>Daftarkan event Anda sekarang, gratis!</h3>
+            </div>
+              <div class="form-group">
+                  <label>Email</label>
+                  <input id="signupName" name="username" class="form-control" required="" pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" type="text">
+                  <small class="error">format email salah</small>
+                  <i class="right fi-mail" style="margin-top: -45px; margin-right: 10px; display: block;"></i>
+              </div>
+              <div class="form-group">
+                  <label>Password</label>
+                  <input name="password" class="form-control" id="signupPassword" required="" pattern="^[A-Za-z][A-Za-z0-9!@#$%^&amp;*]*$" type="password">
+                  <small class="error">minimum password 6 karakter</small>
+                  <i class="right fi-lock" style="margin-top: -45px; margin-right: 10px; display: block;"></i>
+              </div>
+              <div class="form-group">
+                  <label>Konfirmasi Password</label>
+                  <input name="confirmPassword" id="signupConfirmPassword" required="" pattern="^[A-Za-z][A-Za-z0-9!@#$%^&amp;*]*$" data-equalto="signupPassword" class="form-control" type="password">
+                    <small class="error">password tidak sama</small>
+                  <i class="right fi-lock" style="margin-top: -45px; margin-right: 10px; display: block;"></i>
+              </div>
+
+              <div class="row">
+                <div class="small-12 large-8 columns">
+                    <p style="font-size: 11px;">Sudah mendaftar? <a href="https://tamugo.com/backdesk/login" style="font-weight: bold;">Login di sini</a></p>
+
+                </div>
+                <div class="small-12 large-4 columns">
+                  <div class="form-group">
+                      <input class="button button-new right" id="btnLogin" value="Daftar " onclick="ga('send', 'event', 'Login and Signup', 'Signup Submit', 'Onsite')" type="submit">
+                  </div>
+                </div>
+              </div>
+              <hr style="margin-top: 0;">
+              <div class="form-group text-center">
+                  <div class="text-center facebook-Sign-Up">
+                      <a href="https://tamugo.com/user/facebook" class="button-new facebook-connect" onclick="ga('send', 'event', 'Login and Signup', 'Signup Submit', 'Facebook')">
+                      <i class="fi-social-facebook icon-fb"></i>
+                          Daftar Pakai Facebook
+                      </a>
+
+                  </div>
+              </div>
+          </form>
+          </div>
+
+
+        </div>
+      </header>
+
+			<ul class="slider-navigation slidizle-navigation" data-slidizle-navigation="">
+				<!-- automatically generated navigation -->
+			<li class="active">1</li><li class="">2</li></ul>
+
+		</section>
+
+</section>
+<section id="aboutus" data-magellan-destination="aboutus">
+  <div class="home-container">
+    <div class="row">
+      <div class="small-12 large-6 columns" style="margin-bottom:20px;">
+        <!-- <img class="img-shadow" src="../images/tentang-kami.jpg"/> -->
+        <iframe src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/hO2TH9AzkWc.html" allow="autoplay; encrypted-media" allowfullscreen="" width="100%" height="350" frameborder="0"></iframe>
+      </div>
+
+      <div class="small-12 large-6 columns">
+        <span class="title-text"><b>TENTANG</b></span><span class="title-text red"><b> TAMUGO</b></span><br><br>
+        <p>Tamugo dimulai dari kebutuhan pribadi untuk mengatasi 
+pernikahan keluarga. Singkatnya, hingga hari ini, Tamugo digunakan 
+sebagai solusi di berbagai macam acara di Indonesia. Dengan bangga kami 
+mempersembahkan karya anak bangsa dari kota Solo, Indonesia. <br> Tamugo
+ mengotomasi dan menyederhanakan pengumpulan data dari berbagai acara. 
+Fungsionalitasnya antara lain untuk Pemasukan Data informasi tamu dan 
+audiens, Pengiriman undangan secara digital, Pencatatan kehadiran 
+pengguna dan pengumpulan data hasil dari acara <br>
+        Daftarkan segera dan jadikan acara Anda menjadi acara yang futuristik.</p><br>
+
+        <!-- <a href="#" class="button menu">Lihat Video</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+<section id="feature" data-magellan-destination="feature">
+  <div class="tagline-img">
+    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/feature.jpg" class="benefit-couple">
+  </div>
+  <div class="home-container" style="width: 100%;">
+    <div class="row">
+      <div class="small-12 large-6 columns" style="margin-bottom:20px;">
+        <div class="tagline" style="width: 85%; display: block; margin: 0 auto; vertical-align: middle;">
+          <h1>FITUR</h1>
+          <h1>TAMUGO</h1>
+          Tamugo dapat digunakan dimana saja dan dapat memenuhi segala keperluan acara Anda, baik itu korporat atau pribadi
+        </div>
+      </div>
+      <div class="small-12 large-6 columns feature-content">
+        <div class="small-6 large-6 columns text-center">
+          <i class="fi-database tl-head"></i><br>
+          <span class="red"><b>PROSES CHECK IN FLEKSIBEL</b></span>
+        </div>
+        <div class="small-6 large-6 columns text-center">
+          <i class="fi-laptop tl-head"></i><br>
+          <span class="red"><b>PENGGANTI BUKU TAMU MANUAL</b></span>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="small-6 large-6 columns text-center">
+          <i class="fi-pricetag-multiple tl-head"></i><br>
+          <span class="red"><b>FORMAT CETAK LABEL OTOMATIS</b></span>
+        </div>
+        <div class="small-6 large-6 columns text-center">
+          <i class="fi-results-demographics tl-head"></i><br>
+          <span class="red"><b>LAPORAN TAMU DICETAK DENGAN MUDAH DAN PRAKTIS</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="benefit" data-magellan-destination="benefit">
+
+    <div class="benefit">
+        <div class="row">
+
+          <div class="small-12 large-9 columns text-center">
+            <br><br>
+            <div class="text-center">
+              <span class="title-text"><b>KEUNTUNGAN</b></span><span class="title-text red"><b> EVENT ORGANIZER</b></span><br><br>
+            </div>
+            <br>
+            <div class="small-12 large-4 columns text-center">
+              <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/easy-icon.png">
+              </div><br>
+              <span>Di jaman yang serba digital seperti sekarang, Tamugo membuat undangan pernikahan menjadi lebih keren, canggih, dan berkelas.
+              </span>
+            </div>
+            <div class="small-12 large-4 columns text-center">
+              <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/mobile-icon.png">
+              </div><br>
+              <span>Tamugo membuat pengalaman baru kepada Event Organizer dengan daftar tamu, RSVP dan registrasi tamu</span>
+            </div>
+            <div class="small-12 large-4 columns text-center">
+              <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/support-icon.png">
+              </div><br>
+              <span>Tamugo memberikan pelayanan untuk pengaturan daftar tamu sebelum dan selama acara</span>
+            </div>
+          </div>
+
+          <div class="small-12 large-3 columns" style="padding: 0;">
+            <div class="slide">
+              <div class="slider-item">
+                <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/benefit.jpg" class="benefit-couple">
+              </div>
+              <!-- <div class="slider-item">
+                <img src="/images/eo.jpeg" class="benefit-couple"/>
+              </div> -->
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="benefit-2">
+      <div id="benefitCouple" style="opacity: 1; display: block;" class="owl-carousel owl-theme">
+
+            <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 5064px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-1266px, 0px, 0px);"><div class="owl-item" style="width: 1266px;"><div class="row">
+              <div class="small-12 large-3 columns" style="padding: 0;">
+
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/couple.jpeg" class="benefit-couple">
+
+              </div>
+
+              <div class="small-12 large-9 columns">
+                <br><br>
+
+                <br>
+                <div class="small-12 large-12 columns">
+                  <div>
+                    <span class="title-text"><b>KEUNTUNGAN</b></span><span class="title-text red"><b> COUPLE</b></span><br><br>
+                  </div>
+                  <div class="small-3 large-1 columns">
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/1-couple.png" style="width: 50px; height: auto;">
+                  </div>
+                  <div class="small-9 large-11 columns">
+                    <span style="text-align: left;">Tamugo menyederhanakan kerumitan daftar tamu, merancang label undangan untuk dicetak atau dikirim secara digital.
+                    </span><br><br><br>
+                  </div>
+                </div>
+
+                <div class="small-12 large-12 columns">
+                  <div class="small-3 large-1 columns">
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/2-couple.png" style="width: 50px; height: auto;">
+                  </div>
+                  <div class="small-9 large-11 columns">
+                    <span style="text-align: left;">Undangan pernikahan 
+dengan barcode digital, menghubungkan tamu anda ke situs yang dipilih 
+untuk mendapatkan rincian acara. Memperoleh RSVP instan dan pesan-pesan 
+harapan dari para tamu.</span><br><br><br>
+                  </div>
+                </div>
+
+                <div class="small-12 large-12 columns">
+                  <div class="small-3 large-1 columns">
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/3-couple.png" style="width: 50px; height: auto;">
+                  </div>
+                  <div class="small-9 large-11 columns">
+                    <span style="text-align: left;">Tamugo menyediakan 
+rekaman digital untuk semua tamu undangan. Meyederhanakan proses 
+managemen tamu dan mempercepat pendataan tamu.</span><br>
+                  </div>
+                </div>
+              </div>
+
+
+            </div></div><div class="owl-item" style="width: 1266px;"><div class="row">
+              <div class="small-12 large-3 columns" style="padding: 0;">
+                <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/benefit2.jpg" class="benefit-couple">
+              </div>
+
+              <div class="small-12 large-9 columns">
+                <br><br>
+
+                <br>
+                <div class="small-12 large-12 columns">
+                  <div>
+                    <span class="title-text"><b>KEUNTUNGAN</b></span><span class="title-text red"><b> EVENT OWNER</b></span><br><br>
+                  </div>
+                  <div class="small-3 large-1 columns">
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/1-couple.png" style="width: 50px; height: auto;">
+                  </div>
+                  <div class="small-9 large-11 columns">
+                    <span style="text-align: left;">Tamugo menyederhanakan kerumitan daftar tamu, merancang label undangan untuk dicetak atau dikirim secara digital.
+                    </span><br><br><br>
+                  </div>
+                </div>
+
+                <div class="small-12 large-12 columns">
+                  <div class="small-3 large-1 columns">
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/2-couple.png" style="width: 50px; height: auto;">
+                  </div>
+                  <div class="small-9 large-11 columns">
+                    <span style="text-align: left;">Undangan pernikahan 
+dengan barcode digital, menghubungkan tamu anda ke situs yang dipilih 
+untuk mendapatkan rincian acara. Memperoleh RSVP instan dan pesan-pesan 
+harapan dari para tamu.</span><br><br><br>
+                  </div>
+                </div>
+
+                <div class="small-12 large-12 columns">
+                  <div class="small-3 large-1 columns">
+                    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/3-couple.png" style="width: 50px; height: auto;">
+                  </div>
+                  <div class="small-9 large-11 columns">
+                    <span style="text-align: left;">Tamugo menyediakan 
+rekaman digital untuk semua tamu undangan. Meyederhanakan proses 
+managemen tamu dan mempercepat pendataan tamu.</span><br>
+                  </div>
+                </div>
+              </div>
+
+
+            </div></div></div></div>
+
+            
+
+      <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>
+    </div>
+
+</section>
+<section id="carakerja" data-magellan-destination="carakerja">
+  <div class="home-container">
+    <div class="text-center">
+      <span class="title-text"><b>CARA</b></span><span class="title-text red"><b> KERJA</b></span><br><br>
+    </div>
+    <div id="timeline-container">
+      <div class="custom-timeline-block">
+        <div class="custom-timeline-head">
+          <div style="width: 70%; display: block; margin: 0 auto; ">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/cara-1.JPG" style="max-width: 100%; border-radius: 15px; margin-bottom: 10px;">
+          </div>
+          <h5 class="red" style="font-weight: 600;">DAFTAR TAMUGO</h5>
+
+        </div>
+        <div class="custom-timeline-content">
+          Daftarkan perusahaan Event Organizer-mu di sini dengan cepat dan GRATIS. Bisa menggunakan Facebook atau e-mail.
+        </div>
+      </div>
+      <div class="custom-timeline-block">
+        <div class="custom-timeline-head">
+          <div style="width: 70%; display: block; margin: 0 auto;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/cara-2.JPG" style="max-width: 100%; border-radius: 15px; margin-bottom: 10px;">
+          </div>
+          <h5 class="red" style="font-weight: 600;">BUAT AGENT EVENT</h5>
+
+        </div>
+        <div class="custom-timeline-content">
+          Kamu bisa memberikan akses eventmu untuk agent yang juga 
+terdaftar di Tamugo. Agent akan melakukan tugasnya saat Big Day, dengan 
+mendata Tamu yang hadir. Semakin banyak agent, kamu bisa melayani jumlah
+ tamu yang banyak secara bersamaan.
+        </div>
+      </div>
+      <div class="custom-timeline-block">
+        <div class="custom-timeline-head">
+          <div style="width: 70%; display: block; margin: 0 auto;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/cara-3.JPG" style="max-width: 100%; border-radius: 15px; margin-bottom: 10px;">
+          </div>
+          <h5 class="red" style="font-weight: 600;">TENTUKAN TAMU</h5>
+
+        </div>
+        <div class="custom-timeline-content">
+          Tentu saja yang mengetahui hal ini hanyalah yang punya acara. 
+Untuk itu kamu dapat memberikan akses manajemen tamu undangan ke yang 
+punya acara. Share Link ini dan berikan Kode Akses yang dapat kamu 
+temukan di Panel Edit Event.
+        </div>
+      </div>
+      <div class="custom-timeline-block">
+        <div class="custom-timeline-head">
+          <div style="width: 70%; display: block; margin: 0 auto;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/cara-4.JPG" style="max-width: 100%; border-radius: 15px; margin-bottom: 10px;">
+          </div>
+          <h5 class="red" style="font-weight: 600;">CETAK STIKER LABEL</h5>
+        </div>
+        <div class="custom-timeline-content">
+            Pilih daftar tamu untuk undangan. Semua label dengan rincian
+ tamu diformat secara otomatis untuk pencetakan label, atau diformat 
+sebagai lampiran digital.
+        </div>
+      </div>
+      <div class="custom-timeline-block">
+        <div class="custom-timeline-head">
+          <div style="width: 70%; display: block; margin: 0 auto;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/cara-5.JPG" style="max-width: 100%; border-radius: 15px; margin-bottom: 10px;">
+          </div>
+          <h5 class="red" style="font-weight: 600;">SCAN TAMU HADIR</h5>
+        </div>
+        <div class="custom-timeline-content">
+          Agen dengan Aplikasi Tamugo akan memproses kedatangan tamu 
+dengan lancar melalui qrcode, surat atau email yang barcode. Memberikan 
+pengalaman pengguna yang hebat kepada tamu dan validasi yang akurat dari
+ setiap tamu.
+        </div>
+      </div>
+      <div class="custom-timeline-block">
+        <div class="custom-timeline-head">
+          <div style="width: 70%; display: block; margin: 0 auto;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/cara-6.JPG" style="max-width: 100%; border-radius: 15px; margin-bottom: 10px;">
+          </div>
+          <h5 class="red" style="font-weight: 600;">CETAK DAFTAR HADIR</h5>
+        </div>
+        <div class="custom-timeline-content">
+          Sebagai Event Organizer profesional, kamu dapat langsung 
+mencetak daftar kehadiran tamu saat itu juga, untuk diberikan kepada 
+yang punya acara. Daftar hadir ini berguna untuk mengetahui siapa saja 
+yang sudah datang, dan mungkin juga mencatat berapa banyak sumbangan 
+yang diberikan.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="testimonial" data-magellan-destination="testimonial">
+  <div class="tagline-img">
+    <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/testimoni.jpg" class="benefit-couple">
+  </div>
+  <div class="home-container" style="width: 100%; padding-bottom: 60px;">
+    <div class="row">
+      <div class="small-12 large-6 columns" style="margin-bottom:20px;">
+        <div class="tagline" style="width: 85%; display: block; margin: 0 auto; vertical-align: middle;margin-top: 80px !important;">
+          <h2>TESTIMONIAL</h2>
+        </div>
+      </div>
+      <div class="small-12 large-6 columns">
+        <div id="owl" style="opacity: 1; display: block;" class="owl-carousel owl-theme">
+          <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3618px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-1206px, 0px, 0px);"><div class="owl-item" style="width: 603px;"><div class="column row">
+            <div class="large-12 columns testimonial">
+              <div class="quote">
+                <p><i>"Dengan program Tamugo pekerjaan di bagian 
+receptionist menjadi lebih mudah dan cepat. sehingga membuat nilai 
+tambah bagi Event Organizer kami, Terima kasih Tamugo"</i></p>
+              </div>
+              <div class="student">
+                <div class="photo round-image"><img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/testimonial1.jpeg" alt="Author image"></div>
+                <p>Irwan Wahyudi</p>
+                <p>Max Entertainment</p>
+              </div>
+            </div>
+          </div></div><div class="owl-item" style="width: 603px;"><div class="row">
+            <div class="large-12 columns testimonial">
+              <div class="quote">
+                <p><i>"Tamugo sangat membantu sekali, dari sisi Event 
+Organizer memudahkan untuk meregister tamu sehingga alurnya jadi cepat 
+dan tertata, serta meminimalkan potensi tamu gelap masuk. Bagi client 
+atau pasangan mempelai, mereka dimudahkan mendaftarkan tamu dan daftar 
+tamu yang hadir bisa langsung dilihat."</i></p>
+              </div>
+              <div class="student">
+                <div class="photo"> <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/vins.jpg" alt="Author image"></div>
+                <p>Alvin Simon</p>
+                <p>CEO Vinz Production</p>
+              </div>
+            </div>
+          </div></div><div class="owl-item" style="width: 603px;"><div class="row">
+            <div class="large-12 columns testimonial">
+              <div class="quote">
+                <p><i>"Dengan Tamugo, tim admin dapat menyambut dengan 
+hangat, cepat dan detail. Peserta juga senang tidak harus proses lama 
+untuk daftar ulang. Sungguh senang menggunakan aplikasi Tamugo dan 
+pengen rekomendasikan untuk teman-temanku yang bakal punya event juga. 
+Terima kasih Tamugo"</i></p>
+              </div>
+              <div class="student">
+                <div class="photo"> <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/testimonial2.jpg" alt="Author image"></div>
+                <p>Citra</p>
+                <p>Admin Nations Gathering</p>
+              </div>
+            </div>
+          </div></div></div></div>
+
+          
+
+          
+
+        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>
+      </div>
+  </div>
+</div></section>
+<section id="statistic" data-magellan-destination="statistic">
+  <div class="home-container">
+    <div class="row">
+      <div class="small-12 large-12 columns text-center">
+        <div>
+          <div class="small-6 large-3 columns text-center">
+            <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/event-icon.png">
+            </div><br>
+            <span class="count count-text">107</span><br>
+            <span><b><big>Events</big></b></span>
+          </div>
+          <div class="small-6 large-3 columns text-center">
+            <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/register-icon.png">
+            </div><br>
+            <span class="count count-text">150</span><br>
+            <span><b><big>Registered Users</big></b></span>
+          </div>
+          <div class="small-6 large-3 columns text-center">
+            <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/guest-icon.png">
+            </div><br>
+            <span class="count count-text">10276</span><br>
+            <span><b><big>Guests</big></b></span>
+          </div>
+          <div class="small-6 large-3 columns text-center">
+            <div class="statistik">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/agent-icon.png">
+            </div><br>
+            <span class="count count-text">108</span><br>
+            <span><b><big>Agents</big></b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="partner" data-magellan-destination="partner">
+  <div class="partner-container">
+    <div class="row" style="text-align: center; vertical-align: middle;">
+      <div style="display: inline-block; margin-right: 40px;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/eo1.png"></div>
+      <div style="display: inline-block; margin-right: 40px;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/bw.png"></div>
+      <div style="display: inline-block; margin-right: 40px;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/alila-solo-logo.png"></div>
+      <div style="display: inline-block; margin-right: 40px;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/loveInk-logo.png"></div>
+      <div style="display: inline-block; margin-right: 40px;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/hoa-logo.jpeg"></div>
+      <div style="display: inline-block; margin-right: 40px;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/c-logo.jpeg"></div>
+      <div style="display: inline-block; margin-right: 40px;"><a href="http://www.vinzproduction.com/" target="_blank"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/vinz-logo.png"></a></div>
+      <div style="display: inline-block;"><img class="img-partner" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/maxima-logo.png"></div>
+    </div>
+  </div>
+</section>
+<section id="pricing" data-magellan-destination="pricing">
+  <div class="row center-container">
+
+      <div class="small-12 large-4 columns">
+        <div class="pricing_table">
+          <div class="price_content ">
+              <div class="price-title">
+                <span>BASIC<span>
+              </span></span></div>
+              <div class="price-badge">
+                <div class="price-start"><span><i>Start from</i></span></div>
+                  <div class="badge-content price"><h3><span>IDR </span> 2<span class="nominal"> Jt</span></h3></div>
+              </div>
+              <!-- <div><img src="https://s3-ap-southeast-1.amazonaws.com/undanganmuproduction/private.PNG" class="pricing-image" /></div> -->
+
+              <div class="price-list">
+                <ul>
+
+                  <li>Tamugo App</li>
+                  <li>300 Invitations<span class="red-star"> *</span></li>
+                  <li>QR Code Label</li>
+                  <li>RSVP</li>
+                  <li><span class="line-through">Manage Guest List</span></li>
+                  <li><span class="line-through">Physical QR Card</span></li>
+                  <l><span class="line-through">3 Crew Agents</span>
+                  <li><span class="line-through">5 Registration Devices</span></li>
+                  <li><span class="line-through">Selfie Feature</span></li>
+                  <li><span class="line-through">Video Testimony</span></li>
+                  <li><a href="#" data-reveal-id="signupModal" class="buy_now">START NOW</a></li>
+                </l></ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-12 large-4 columns">
+        <div class="pricing_table">
+          <div class="price_content ">
+              <div class="price-title">
+                <span>PROFESIONAL<span>
+              </span></span></div>
+              <div class="price-badge">
+                <div class="price-start"><span><i>Start from</i></span></div>
+                <div class="badge-content price"><h3><span>IDR </span> 3<span class="nominal">.8 Jt</span></h3></div>
+              </div>
+              <!-- <div><img src="https://s3-ap-southeast-1.amazonaws.com/undanganmuproduction/private.PNG" class="pricing-image" /></div> -->
+
+              <div class="price-list">
+                <ul>
+
+                  <li>Tamugo App</li>
+                  <li>300 Invitations<span class="red-star"> *</span></li>
+                  <li>QR Code Label</li>
+                  <li>RSVP</li>
+                  <li>Manage Guest List</li>
+                  <li>Physical QR Card</li>
+                  <li>3 Crew Agents</li>
+                  <li><span class="line-through">5 Registration Devices</span></li>
+                  <li><span class="line-through">Selfie Feature</span></li>
+                  <li><span class="line-through">Video Testimony</span></li>
+                  <li><a href="#" data-reveal-id="signupModal" class="buy_now">START NOW</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-12 large-4 columns">
+        <div class="pricing_table">
+          <div class="price_content ">
+              <div class="price-title gold-color">
+                <span>PREMIUM<span>
+              </span></span></div>
+              <!-- <div><img src="https://s3-ap-southeast-1.amazonaws.com/undanganmuproduction/eo.PNG" class="pricing-image" /></div> -->
+              <div class="price-badge gold">
+                <img class="tag-promo" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/soon.png">
+                <div class="price-start"><span><i>Start from</i></span></div>
+                <div class="badge-content price gold"><h3><span>IDR </span> 5<span class="nominal">.8 Jt</span></h3></div>
+              </div>
+
+              <div class="price-list">
+                <ul>
+                  <li>Tamugo App</li>
+                  <li>300 Invitations<span class="red-star"> *</span></li>
+                  <li>QR Code Label</li>
+                  <li>RSVP</li>
+                  <li>Manage Guest List</li>
+                  <li>Physical QR Card</li>
+                  <li>3 Crew Agents</li>
+                  <li>3 Registration Devices</li>
+                  <li>Selfie Feature</li>
+                  <li>Video Testimony</li>
+                  <li><a href="#" data-reveal-id="signupModal" class="buy_now gold">START NOW</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="smal-12 large-12 columns">
+        <span>
+          <b>(*)  Jika jumlah undangan melebihi jumlah yang tertera pada paket, silahkan menghubungi kontak kami</b>
+        </span>
+      </div>
+      <div class="small-12 large-5 columns">&nbsp;</div>
+      <div class="small-12 large-2 columns" style="text-align:center;"><br><big><b>OR</b></big><br><br><a href="#" data-reveal-id="signupModal" class="button">FREE TRIAL</a></div>
+      <div class="small-12 large-5 columns">&nbsp;</div>
+
+
+  </div>
+  <div id="signupModal" class="reveal-modal no-padding-modal" data-reveal="">
+    <div class="popup-header">
+      <span>DAFTAR SEKARANG</span>
+    </div>
+    <div class="popup-content">
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="form-group text-center" style="margin-top:15%;">
+              <div class="text-center facebook-Sign-Up">
+                  <a href="https://tamugo.com/user/facebook" class="button-new facebook-connect" onclick="ga('send', 'event', 'Login and Signup', 'Signup Submit', 'Facebook')">
+                  <i class="fi-social-facebook icon-fb"></i>
+                      Daftar Pakai Facebook
+                  </a>
+
+              </div>
+          </div>
+        </div>
+        <div class="large-6 columns">
+          <form action="/signup" method="post" data-abide="" novalidate="novalidate" siq_id="autopick_3364">
+              <div class="row collapse">
+                  <div class="small-2 columns">
+                      <span class="prefix"><i class="fi-mail"></i></span>
+                  </div>
+                  <div class="small-10  columns ">
+                      <input id="signupName1" name="username" required="" placeholder="Email" pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" type="text">
+                          <small class="error">format email salah</small>
+                  </div>
+              </div>
+              <div class="row collapse">
+                  <div class="small-2 columns ">
+                      <span class="prefix"><i class="fi-lock"></i></span>
+                  </div>
+                  <div class="small-10 columns ">
+                      <input name="password" id="signupPassword1" placeholder="Password" required="" pattern=".{6,}" type="password">
+                      <small class="error">minimum password 6 karakter</small>
+                  </div>
+              </div>
+              <div class="row collapse">
+                  <div class="small-2 columns ">
+                      <span class="prefix"><i class="fi-lock"></i></span>
+                  </div>
+                  <div class="small-10 columns ">
+                      <input name="confirmPassword" id="signupConfirmPassword1" placeholder="Konfirmasi Password" required="" pattern="" data-equalto="signupPassword" type="password">
+                      <small class="error">password tidak sama</small>
+                  </div>
+              </div>
+              <div>
+                  <input class="button" value="Daftar" onclick="ga('send', 'event', 'Login and Signup', 'Signup Submit', 'Onsite')" type="submit">
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contactus" data-magellan-destination="contactus">
+  <div class="home-container">
+    <div class="row">
+      <div class="small-12 large-12 columns text-center">
+        <span class="title-text"><b>KONTAK</b></span><span class="title-text red"><b>  KAMI</b></span><br><br>
+        <p>Jika ada pertanyaan mengenai Tamugo, anda dapat menghubungi kontak di bawah ini</p>
+      </div>
+      <div class="small-12 large-4 columns" style="margin-bottom:20px;">
+        <h4>ALAMAT</h4>
+        Jl. Veteran No.2, Pasar Kliwon, Solo, Jawa Tengah
+        <br>indonesia
+        <br><br>
+        info@tamugo.com
+        <br><br>
+        <h4>Contact Person</h4>
+        <div class="small-4 large-3 columns" style="padding: 0; margin-right: 10px; ">
+          <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/marketing1.jpeg" style="border-radius: 50%; ">
+        </div>
+        <b>Mawar Oky</b><br><br>
+        <a class="no-background" href="https://api.whatsapp.com/send?phone=6281391233060&amp;text=halo%20saya%20tertarik%20menggunakan%20tamugo" target="_blank" style="display: inline-block; ">
+          <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;0813 9123 3060
+        </a><br>
+        <i class="fas fa-phone"></i>&nbsp;&nbsp;(0271) 636767
+        <div style="clear: both;"></div>
+        <br>
+
+      </div>
+      <div class="small-12 large-8 columns">
+        <div class="row collapse">
+            <div class="large-12 columns">
+            <form method="post" id="kontakForm" action="/user/contactUs" data-abide="" novalidate="novalidate" siq_id="autopick_4181">
+                <div class="large-12 columns">
+
+                    <div class="large-6 columns nama-lengkap-editor">
+                        <input required="" placeholder="Nama" style="box-shadow: none; border: 1px solid #e7e6e6;" name="nama" type="text">
+                        <small class="error"> Nama Harus diisi </small>
+                    </div>
+                    <div class="large-6 columns nama-lengkap-editor">
+                        <input placeholder="Email" style="box-shadow: none; border: 1px solid #e7e6e6;" required="" pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" name="email" type="text">
+                        <small class="error">format email salah</small>
+                    </div>
+                </div>
+                <div class="large-12 columns">
+                    <div class="large-6 columns nama-lengkap-editor">
+                        <input placeholder="Subjek" style="box-shadow: none; border: 1px solid #e7e6e6;" required="" name="subjek" type="text">
+                        <small class="error"> Subjek Tidak Boleh Kosong </small>
+                    </div>
+                    <div class="large-6 columns nama-lengkap-editor">
+                        <input placeholder="Telepon" style="box-shadow: none; border: 1px solid #e7e6e6;" name="telepon" type="text">
+                    </div>
+                </div>
+                <div class="large-12 columns">
+                  <div class="large-12 columns nama-lengkap-editor">
+                    <textarea placeholder="Pesan" type="text" rows="10" style="box-shadow: none; border: 1px solid #e7e6e6;" name="pesan"></textarea>
+
+                    <button class="button menu right">Kirim</button>
+                  </div>
+
+                </div>
+                 <input style="background-color: white;" data-tooltip="" data-options="disable_for_touch:false" data-reveal-id="kontakModal" id="kontakFront" data-reveal-ajax="true" title="" type="hidden">
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="row">
+        <div class="large-4 columns">
+          <form method="post" action="/main/SelectLanguage" data-abide="" novalidate="novalidate" siq_id="autopick_8248">
+            <select name="PilihBahasa" id="bahasa">
+                <option value="id" selected="selected">Pilih Bahasa</option>
+                <option value="id">Bahasa Indonesia</option>
+                <option value="en">English</option>
+            </select>
+          </form> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="large-8 columns">
+          <a href="https://www.instagram.com/tamugoid/?hl=en" target="_blank" style="display: inline-block; ">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/ig-icon.png" style="width: 70%; text-align: center;">
+          </a>
+
+          <a href="https://twitter.com/TamugoID?lang=en" target="_blank" style="display: inline-block;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/twitter-icon.png" style="width: 70%; text-align: center;">
+          </a>
+
+          <a href="https://www.facebook.com/tamugoID/?fref=ts" target="_blank" style="display: inline-block;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/fb-icon.png" style="width: 70%; text-align: center;">
+          </a>
+
+          <a href="https://blog.tamugo.com/" target="_blank" style="display: inline-block;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/blog-icon.png" style="width: 70%; text-align: center;">
+          </a>
+          <a href="https://blog.tamugo.com/gallery/" target="_blank" style="display: inline-block;">
+              <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/img-icon.png" style="width: 70%; text-align: center;">
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="right">
+        © TAMUGO. ALL RIGHTS RESERVED
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="lupaPasswordModal" class="reveal-modal" data-reveal="">
+  <h2 class="welcome">It's Okay..</h2>
+  <p class="lead">Masukin E-Mail yang dulu buat daftar..</p>
+  <p> Secepatnya akan kami kirimkan password Tamugo yang baru, cek Inbox. Kalau masih belum dapat E-Mail juga, bisa kontak ke info@tamugo.com  </p>
+
+   <form id="lupaPasswordForm" action="/user/lupaPassword" method="post" siq_id="autopick_9542">
+        <div class="row collapse">
+            <div class="small-2 columns ">
+                <span class="prefix"><i class="fi-mail"></i></span>
+            </div>
+            <div class="small-10 columns ">
+                <input name="email" placeholder="Alamat Emailmu" type="text">
+            </div>
+        </div>
+        <div>
+            <input class="button" value="Kirim Password barunya ya !" type="submit">
+        </div>
+    </form>
+  <a class="close-reveal-modal">×</a>
+</div>
+
+</section>
+
+<div id="FlyerModalNoTampil" class="reveal-modal" data-reveal="">
+  <img src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/flyer.jpg">
+</div>
+
+
+
+
+<div id="kontakModal" class="reveal-modal" data-reveal="" data-options="close_on_background_click:false;close_on_esc:false;">
+<h3 align="center">Terimakasih Telah Menghubungi Tamugo</h3>
+<br>
+<p>Pesan anda sudah terkirim ke tamugo </p>
+<p>Pihak dari tamugo akan merespon pesan anda secepatnya</p>
+<br>
+<br>
+<p>Salam Hangat <br> Team Tamugo</p>
+<a href="https://tamugo.com/" class="button menu right">Close</a>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+      $('#FlyerModalNoTampil').foundation('reveal', 'close');
+      $('#FlyerModal').foundation('reveal', 'open');
+      //text-slider
+      $('.slide').textSlider();
+
+        //testimonial slider
+          $("#owl").owlCarousel({
+              navigation: false,
+              slideSpeed: 100,
+              paginationSpeed: 800,
+              singleItem: true,
+              autoPlay: true
+          });
+
+          //content SLIDER
+          $("#benefitCouple").owlCarousel({
+              navigation: false,
+              slideSpeed: 100,
+              paginationSpeed: 800,
+              singleItem: true,
+              autoPlay: true
+          });
+
+
+          $(function() {
+            $('#bahasa').on('change', function(e) {
+              $(this).closest('form')
+                     .trigger('submit')
+            });
+            $('#imgLanguage').click(function(){
+              $(this).closest('form').trigger('submit')
+            });
+            $('#imgLanguageID').click(function(){
+
+              $(this).closest('form').trigger('submit')
+              document.getElementById("imgLanguageID").style.color = "red";
+            });
+          });
+      });
+
+      //statistic counter
+      $(window).scroll(startCounter);
+        function startCounter() {
+            if ($(window).scrollTop() > 3000) {
+                $(window).off("scroll", startCounter);
+                $('.count').each(function () {
+                    var $this = $(this);
+                    jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                        duration: 3000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.ceil(this.Counter));
+                        }
+                    });
+                });
+            }
+        }
+
+//call api graph facebook
+
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '342871855787923',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.8'
+      });
+
+
+      FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+      });
+    }
+
+
+    function statusChangeCallback(response){
+      if(response.status === 'connected'){
+        console.log(' Logged in and authenticated ');
+      } else {
+        console.log(' Not authenticated ');
+      }
+
+    }
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+     jQuery(function($) {
+
+			// setup slidizle
+			$('[data-slidizle]').slidizle({
+				beforeChange : function(api) {
+					// console.log('previous', api.getPreviousSlide().index());
+					// console.log('current', api.getCurrentSlide().index());
+					// console.log('next', api.getNextSlide().index());
+					// console.log('previous active', api.getPreviousActiveSlide().index());
+				}
+			});
+
+      //text-slider
+      $('.slide').textSlider();
+		});
+</script>
+
+            <!--SCRIPTS-->
+            <script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/production.js"></script><span data-selector="kontakFront" class="tooltip"><span class="nub"></span></span>
+            <!--SCRIPTS END-->
+            <!--ANALYTICS-->
+            <script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/analytics.js"></script>
+            <script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/zohoSalesIQ.js"></script>
+            <!--ANALYTICS END-->
+
+            <script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/foundation.js"></script>
+<script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/indexFrontPageScript.js"></script>
+<script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/text-slider.js"></script>
+<script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/jquery_002.js"></script>
+<script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/owl.js"></script>
+<script src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/jquery-migrate-1.js"></script>
+        
+    
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/RQ7NiRXMcYA.html" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f25e4bc08a42234" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="display: none;" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/ping.html" frameborder="0"></iframe></div></div></div><div class="zls-sptwndw siqembed siqtrans  zlsps-rht  zls-icosw-1" embedtheme="4" style=""><div id="zlscht" class="zls-prelative"><iframe seamless="" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/chatwindow.html" id="zlsiframe" style="visibility: visible; overflow: hidden;" onload="setTimeout(function(){Float.showIframe(document.getElementById('zlsiframe'),'onload')},50);" scrolling="no" width="100%" height="460" frameborder="0"></iframe></div></div><div class="zls-medium zls-btnmn zls-btrht " style="display: block;"><div class="zls-btnsub zls-lftbtn"><div id="zls_ctn_wrap" class="zlsf_btmn zlscustomize" style="background-color: rgb(118, 50, 63); height: 44px;"><div class="zls-chtmn" id="zlsimgcont" style="background-color:#76323f"> <img class="zls-on-L7" id="zlsfltimg" src="Tamugo%20-%20Undangan%20Pintar%20untuk%20Event%20Pintar_files/spacer.gif" alt="chat-image" title="Online" width="16" height="18"></div><div class="zlslrgbtn-on-tit1"><div style="color:#FFFFFF" id="zlstxtcnt" class="zls_fltxtcnt">Click to chat</div></div></div></div></div></body></html>
